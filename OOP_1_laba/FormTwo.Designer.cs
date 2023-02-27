@@ -89,7 +89,7 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
             this.Name = "FormTwo";
-            this.Text = "Winter!";
+            this.Text = "Зима!";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormTwo_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();

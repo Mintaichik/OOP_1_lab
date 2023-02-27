@@ -111,9 +111,26 @@ namespace OOP_1_laba
             f.Show();
         }
 
-        private void FormOne_Paint(object sender, PaintEventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        int counterPaint = 0;
+        private void FormOne_Paint(object sender, PaintEventArgs e)
+        {
+            label5.Text = counterPaint.ToString();
+            counterPaint++;
+        }
+
+        private void FormOne_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormOne_SizeChanged(object sender, EventArgs e)
+        {
+            button2.Width = this.Width/4;
         }
     }
 }

@@ -46,6 +46,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(307, 28);
+            this.menuStrip1.Stretch = false;
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "Список форм";
             // 
@@ -63,7 +64,7 @@
             // 
             this.tsmFormOne.Name = "tsmFormOne";
             this.tsmFormOne.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.tsmFormOne.Size = new System.Drawing.Size(216, 26);
+            this.tsmFormOne.Size = new System.Drawing.Size(195, 26);
             this.tsmFormOne.Text = "Форма 1";
             this.tsmFormOne.Click += new System.EventHandler(this.tsmFormOne_Click);
             // 
@@ -71,7 +72,7 @@
             // 
             this.tsmFormTwo.Name = "tsmFormTwo";
             this.tsmFormTwo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.tsmFormTwo.Size = new System.Drawing.Size(216, 26);
+            this.tsmFormTwo.Size = new System.Drawing.Size(195, 26);
             this.tsmFormTwo.Text = "Форма 2";
             this.tsmFormTwo.Click += new System.EventHandler(this.tsmFormTwo_Click);
             // 
@@ -95,6 +96,7 @@
             this.Name = "MainForm";
             this.Text = "Главная форма";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainForm_Paint);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

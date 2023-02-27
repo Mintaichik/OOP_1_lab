@@ -45,6 +45,11 @@ namespace OOP_1_laba
             f.Show();
         }
 
+        private void MainForm_SizeChanged(object sender, EventArgs e)
+        {
+            //menuStrip1.Size++;
+        }
+
         private void MainForm_Paint(object sender, PaintEventArgs e)
         {
 
