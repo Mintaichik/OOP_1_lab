@@ -1,6 +1,6 @@
 ﻿namespace OOP_1_laba
 {
-    partial class FormAboutProgram
+    partial class Spring
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAboutProgram));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Spring));
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 

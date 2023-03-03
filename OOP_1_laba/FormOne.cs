@@ -20,26 +20,26 @@ namespace OOP_1_laba
 
         private void rbHappy_CheckedChanged(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:\\Миля\\4 семестр\\ООП\\OOP_1_laba\\photo\\smileN.png");
+            pbSmile.Image = Image.FromFile("C:\\Миля\\4 семестр\\ООП\\OOP_1_laba\\photo\\smileN.png");
         }
 
         private void rbSad_CheckedChanged(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:\\Миля\\4 семестр\\ООП\\OOP_1_laba\\photo\\sadN.png");
+            pbSmile.Image = Image.FromFile("C:\\Миля\\4 семестр\\ООП\\OOP_1_laba\\photo\\sadN.png");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (comboBox1.SelectedIndex)
+            switch (cbColor.SelectedIndex)
             {
                 case 0:
-                    pictureBox1.BackColor = Color.Green;
+                    pbSmile.BackColor = Color.Green;
                     break;
                 case 1:
-                    pictureBox1.BackColor = Color.Blue;
+                    pbSmile.BackColor = Color.Blue;
                     break;
                 case 2:
-                    pictureBox1.BackColor = Color.Red;
+                    pbSmile.BackColor = Color.Red;
                     break;
             }
         }
@@ -67,27 +67,29 @@ namespace OOP_1_laba
 
         private void listBox1_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += listBox1.SelectedItem;
+            rtbNumber.Text += lbNumber.SelectedItem;
         }
+
+
 
         private void richTextBox1_MouseHover(object sender, EventArgs e)
         {
-            richTextBox1.Text = "";
+            rtbNumber.Text = "";
         }
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "Green")
+            if (cbColor.Text == "Green")
             {
-                pictureBox1.BackColor = Color.Green;
+                pbSmile.BackColor = Color.Green;
             }
-            if (comboBox1.Text == "Red")
+            if (cbColor.Text == "Red")
             {
-                pictureBox1.BackColor = Color.Red;
+                pbSmile.BackColor = Color.Red;
             }
-            if (comboBox1.Text == "Blue")
+            if (cbColor.Text == "Blue")
             {
-                pictureBox1.BackColor = Color.Blue;
+                pbSmile.BackColor = Color.Blue;
             }
         }
 
@@ -95,13 +97,8 @@ namespace OOP_1_laba
         {
             if (e.KeyChar == 32)
             {
-                pictureBox1.BackColor = Color.HotPink;
+                pbSmile.BackColor = Color.HotPink;
             }
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -111,26 +108,62 @@ namespace OOP_1_laba
             f.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         int counterPaint = 0;
         private void FormOne_Paint(object sender, PaintEventArgs e)
         {
-            label5.Text = counterPaint.ToString();
+            lbPaint.Text = "Количество перерисовок: " + counterPaint.ToString();
             counterPaint++;
-        }
-
-        private void FormOne_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void FormOne_SizeChanged(object sender, EventArgs e)
         {
-            button2.Width = this.Width/4;
+            btnGo.Width = this.Width/4;
+            sizeLabel.Text = "Размер окна: " + this.Height.ToString() + "x" + this.Width.ToString();
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index  = clbAdd.SelectedIndex;
+            int count = clbAdd.Items.Count;
+            for (int x = 0; x < count; x++)
+            {
+                if (index != x)
+                    clbAdd.SetItemChecked(x, false);
+            }
+            if (index != -1)
+            {
+                llbAdd.Text = clbAdd.Items[index].ToString();
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (tbAdd.Text != "")
+            {
+                clbAdd.Items.Add(tbAdd.Text);
+
+            }
+        }
+
+        private void llbAdd_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            llbAdd.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://ya.ru/?nr=1&redirect_ts=1677645185.85743&utm_referrer=https%3A%2F%2Fyandex.ru%2F");
+        }
+
+        private void pbSmile_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            btnAdd.PerformClick();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(tbSearch.Text);
         }
     }
 }

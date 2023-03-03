@@ -30,35 +30,35 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTwo));
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.lbDescription = new System.Windows.Forms.Label();
+            this.cbDate = new System.Windows.Forms.CheckBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lbDescription
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(48, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(490, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Правая кнопка мыши - создаёт снежинку. Клик по снежинке удаляет её.";
+            this.lbDescription.AutoSize = true;
+            this.lbDescription.BackColor = System.Drawing.Color.Transparent;
+            this.lbDescription.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbDescription.Location = new System.Drawing.Point(48, 14);
+            this.lbDescription.Name = "lbDescription";
+            this.lbDescription.Size = new System.Drawing.Size(490, 17);
+            this.lbDescription.TabIndex = 0;
+            this.lbDescription.Text = "Правая кнопка мыши - создаёт снежинку. Клик по снежинке удаляет её.";
             // 
-            // checkBox1
+            // cbDate
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBox1.Location = new System.Drawing.Point(23, 417);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(136, 21);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Показать время";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.cbDate.AutoSize = true;
+            this.cbDate.BackColor = System.Drawing.Color.Transparent;
+            this.cbDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbDate.Location = new System.Drawing.Point(23, 417);
+            this.cbDate.Name = "cbDate";
+            this.cbDate.Size = new System.Drawing.Size(136, 21);
+            this.cbDate.TabIndex = 1;
+            this.cbDate.Text = "Показать время";
+            this.cbDate.UseVisualStyleBackColor = false;
+            this.cbDate.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // timer1
             // 
@@ -66,17 +66,17 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label2
+            // lbDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(635, 417);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(16, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "0";
-            this.label2.Visible = false;
+            this.lbDate.AutoSize = true;
+            this.lbDate.BackColor = System.Drawing.Color.Transparent;
+            this.lbDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbDate.Location = new System.Drawing.Point(635, 417);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(16, 17);
+            this.lbDate.TabIndex = 2;
+            this.lbDate.Text = "0";
+            this.lbDate.Visible = false;
             // 
             // FormTwo
             // 
@@ -85,9 +85,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbDate);
+            this.Controls.Add(this.cbDate);
+            this.Controls.Add(this.lbDescription);
             this.Name = "FormTwo";
             this.Text = "Зима!";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormTwo_MouseDown);
@@ -98,9 +98,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label lbDescription;
+        private System.Windows.Forms.CheckBox cbDate;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbDate;
     }
 }

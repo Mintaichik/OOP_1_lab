@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OOP_1_laba
 {
-    public partial class FormAboutProgram : Form
+    public partial class Spring : Form
     {
-        public FormAboutProgram()
+        public Spring()
         {
             InitializeComponent();
         }

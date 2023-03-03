@@ -46,19 +46,19 @@ namespace OOP_1_laba
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
+            if (cbDate.Checked == true)
             {
-                label2.Visible = true;
+                lbDate.Visible = true;
             }
             else
             {
-                label2.Visible = false;
+                lbDate.Visible = false;
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label2.Text = DateTime.Now.ToString();
+            lbDate.Text = DateTime.Now.ToString();
         }
     }
 }

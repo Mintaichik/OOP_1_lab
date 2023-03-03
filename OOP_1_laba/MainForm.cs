@@ -41,7 +41,7 @@ namespace OOP_1_laba
 
         private void tsmiAboutProgram_Click(object sender, EventArgs e)
         {
-            FormAboutProgram f = new FormAboutProgram();
+            Spring f = new Spring();
             f.Show();
         }
 

@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAboutProgram.cs">
+    <Compile Include="Spring.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAboutProgram.Designer.cs">
-      <DependentUpon>FormAboutProgram.cs</DependentUpon>
+    <Compile Include="Spring.Designer.cs">
+      <DependentUpon>Spring.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTwo.cs">
       <SubType>Form</SubType>
@@ -72,8 +72,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAboutProgram.resx">
-      <DependentUpon>FormAboutProgram.cs</DependentUpon>
+    <EmbeddedResource Include="Spring.resx">
+      <DependentUpon>Spring.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOne.resx">
       <DependentUpon>FormOne.cs</DependentUpon>

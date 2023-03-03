@@ -33,7 +33,7 @@
             this.tsmiForms = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmFormOne = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmFormTwo = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiAboutProgram = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSpring = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +42,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiForms,
-            this.tsmiAboutProgram});
+            this.tsmiSpring});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(307, 28);
@@ -64,7 +64,7 @@
             // 
             this.tsmFormOne.Name = "tsmFormOne";
             this.tsmFormOne.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.tsmFormOne.Size = new System.Drawing.Size(195, 26);
+            this.tsmFormOne.Size = new System.Drawing.Size(216, 26);
             this.tsmFormOne.Text = "Форма 1";
             this.tsmFormOne.Click += new System.EventHandler(this.tsmFormOne_Click);
             // 
@@ -72,16 +72,16 @@
             // 
             this.tsmFormTwo.Name = "tsmFormTwo";
             this.tsmFormTwo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.tsmFormTwo.Size = new System.Drawing.Size(195, 26);
+            this.tsmFormTwo.Size = new System.Drawing.Size(216, 26);
             this.tsmFormTwo.Text = "Форма 2";
             this.tsmFormTwo.Click += new System.EventHandler(this.tsmFormTwo_Click);
             // 
-            // tsmiAboutProgram
+            // tsmiSpring
             // 
-            this.tsmiAboutProgram.Name = "tsmiAboutProgram";
-            this.tsmiAboutProgram.Size = new System.Drawing.Size(66, 24);
-            this.tsmiAboutProgram.Text = "Весна!";
-            this.tsmiAboutProgram.Click += new System.EventHandler(this.tsmiAboutProgram_Click);
+            this.tsmiSpring.Name = "tsmiSpring";
+            this.tsmiSpring.Size = new System.Drawing.Size(66, 24);
+            this.tsmiSpring.Text = "Весна!";
+            this.tsmiSpring.Click += new System.EventHandler(this.tsmiAboutProgram_Click);
             // 
             // MainForm
             // 
@@ -111,7 +111,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiForms;
         private System.Windows.Forms.ToolStripMenuItem tsmFormOne;
         private System.Windows.Forms.ToolStripMenuItem tsmFormTwo;
-        private System.Windows.Forms.ToolStripMenuItem tsmiAboutProgram;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSpring;
     }
 }
 
